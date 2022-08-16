@@ -1,8 +1,5 @@
 <h1>Task Calendar</h1> <h2>Projeto desenvolvido para processo seletivo</h2>
 
-Visualização do projeto aqui (deploy vercel): <a href="https://task-calendar-one.vercel.app/">Visualizar Projeto</a><br>
-*o login pode demorar um pouco por causa da hospedagem do servidor
-
 Primeiro acesso?<br>
 Cadastrar usuário no link de cadastro da página inicial ou acessar utilizando:<br>
 <code>-e-mail: teste@teste.com</code><br>
@@ -48,6 +45,7 @@ Funcionalidades ainda a serem implementadas:
   
 Para rodar o projeto no seu computador:
   - clonar o projeto
-  - instalar as dependências (não é necessário instalar e rodar o server, apenas a pasta web)
-  - caso queira rodar o server no localhost, instalar as dependências, abrir o arquivo "web/src/services/api.js" e alterar a baseURL.
+  - instalar as dependências tanto na pasta web quanto na pasta server
+  - rodar o server com <code> yarn dev </code>
+  - rodar o front com <code> yarn start </code>
   
