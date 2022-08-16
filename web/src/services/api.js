@@ -1,9 +1,7 @@
 import axios from "axios";
 
-//------ Caso queira rodar o servidor no localhost inverter as baseURL.
 export const api = axios.create({
-  // baseURL: "http://localhost:5000",
-  baseURL: "https://task-calendar.glitch.me"
+  baseURL: "http://localhost:5000",
 });
 
 export const createSession = async (email, password) => {
