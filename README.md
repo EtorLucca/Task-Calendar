@@ -1,11 +1,11 @@
-Task Calendar - Projeto desenvolvido para processo seletivo
+<h1>Task Calendar</h1> <h2>Projeto desenvolvido para processo seletivo</h2>
 
-Visualização aqui: <a href="">Visualizar Projeto</a><br>
+Visualização do projeto aqui (deploy vercel): <a href="https://task-calendar-one.vercel.app/">Visualizar Projeto</a><br>
 
-Primeiro acesso?
-Cadastrar usuário no link de cadastro da página inicial ou acessar utilizando:
-  -e-mail: teste@teste.com
-  -senha: secret
+Primeiro acesso?<br>
+Cadastrar usuário no link de cadastro da página inicial ou acessar utilizando:<br>
+<code>-e-mail: teste@teste.com</code><br>
+<code>-senha: secret </code>
 
 
 SPA de calendário de tarefas utilizando:
@@ -44,3 +44,9 @@ Funcionalidades ainda a serem implementadas:
   - Tags
   - Feriados
   - Dashboard
+  
+Para rodar o projeto no seu computador:
+  - clonar o projeto
+  - instalar as dependências (não é necessário instalar e rodar o server, apenas a pasta web)
+  - caso queira rodar o server no localhost, instalar as dependências, abrir o arquivo "web/src/services/api.js" e alterar a baseURL.
+  
