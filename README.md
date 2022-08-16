@@ -1,6 +1,7 @@
 <h1>Task Calendar</h1> <h2>Projeto desenvolvido para processo seletivo</h2>
 
 Visualização do projeto aqui (deploy vercel): <a href="https://task-calendar-one.vercel.app/">Visualizar Projeto</a><br>
+*o login pode demorar um pouco por causa da hospedagem do servidor
 
 Primeiro acesso?<br>
 Cadastrar usuário no link de cadastro da página inicial ou acessar utilizando:<br>
