@@ -1,0 +1,43 @@
+.nav {
+  align-items: center;
+  background: #cfcfcf;
+  box-shadow: 3px 0 3px 1px #000000CC;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 50px 32px 50px;
+  height: 18vh;
+  width: 100vw;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+.logo {
+  margin: 0;
+  height: 56px;
+}
+
+.logoText {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  margin: 8px 0 0 8px;
+}
+
+.btnLogout {
+  background: #e9e928;
+  border: 1px solid #d3d328;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 35px;
+  padding: 8px 16px;
+}
+
+.btnLogout:hover {
+  background-color: #d3d328;
+  cursor: pointer;
+}

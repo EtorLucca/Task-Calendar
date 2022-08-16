@@ -1,0 +1,56 @@
+.menu {
+  border-right-width: 2px;
+  border-right-style: ridge;
+  border-right-color: #00000033;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 0 32px 32px;
+  width: 20%;
+}
+
+.viewLabel {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.icon {
+  width: 16px;
+  margin: 0 10px 0 0;
+}
+
+.iconValue {
+  margin-top: 5px;
+}
+
+.selectView {
+  width: 140px;
+}
+
+.menuNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuNavDiv {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  margin-top: 16px;
+  border-radius: 16px;
+  margin-right: 8px;
+  text-decoration: none;
+}
+
+.menuNavDiv:hover {
+  background-color: #ffffff8c;
+}
+
+.menuNavText {
+  color: #ffffff8c;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.active {
+  color: #000000;
+}

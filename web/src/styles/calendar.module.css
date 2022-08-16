@@ -1,0 +1,170 @@
+.calendar {
+  background: #FFFFFF;
+  width: 100%;
+}
+
+.calendarTable {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px 0 32px 0;
+  width: 80%;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.weekdays {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  color: #247BA0;
+}
+
+.weekdays div {
+  width: 11vw;
+  padding: 5px 0;
+}
+
+.header {
+  padding: 10px;
+  color: #d36c6c;
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header button {
+  background-color:#92a1d1;
+}
+
+.day {
+  width: 10vw;
+  height: 8.7vw;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 1px;
+  box-shadow: 0px 0px 3px #CBD4C2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 0;
+}
+.day:hover {
+  background-color: #e8faed;
+}
+
+.day + .currentDay {
+  background-color:#e8f4fa;
+}
+
+.padding {
+  cursor: default !important;
+  background-color: #FFFCFF !important;
+  box-shadow: none !important;
+}
+
+.event {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #58bae4;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 15px;
+  margin-bottom: 2px;
+  padding-left: 5px;
+  z-index: 10;
+}
+
+.eventDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  padding: 0 5px;
+  top: 35px;
+  width: 100%;
+  z-index: 100;
+}
+
+.newTaskClick {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.event span {
+  font-size: 10px;
+  color: #000;
+}
+
+.newEventModal {
+  z-index: 20;
+  padding: 25px;
+  background-color: #e8f4fa;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+}
+
+.eventText {
+  font-size: 14px;
+}
+
+.cancelButton, .deleteButton {
+  background-color: #d36c6c;
+}
+.saveButton, .closeButton {
+  background-color: #92a1d1;
+}
+.updateButton {
+  background-color: #92d1a2;
+}
+
+.eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+.eventTitleInput:nth-child(n) {
+  margin-bottom: 10PX;
+}
+.eventTitleInput:nth-child(4) {
+  margin-top: 10PX;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.button {
+  width: 75px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
