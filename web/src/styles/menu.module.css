@@ -54,3 +54,7 @@
 .active {
   color: #000000;
 }
+
+.warning {
+  color: red;
+}

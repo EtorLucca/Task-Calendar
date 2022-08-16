@@ -24,7 +24,6 @@ routes.delete("/users/:id", UsersController.destroy);
 
 routes.get("/tasks/:user_id", TasksController.index);
 routes.post("/tasks/:user_id", TasksController.create);
-routes.show("/tasks/:user_id/:id", TasksController.show);
 routes.put("/tasks/:user_id/:id", TasksController.update);
 routes.delete("/tasks/:user_id/:id", TasksController.destroy);
 

@@ -31,6 +31,7 @@ function Menu() {
           <span className={styles.iconValue}>Mês</span>
         </MenuItem>
       </Select>
+      <span className={styles.warning}>*ainda não implementado</span>
     </nav>
   );
 }

@@ -6,7 +6,9 @@ import {
   Navigate,
 } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 import MainPage from "./pages/MainPage";
+import SearchPage from "./pages/SearchPage";
 import { AuthProvider, AuthContext } from "./contexts/auth";
 
 function AppRoutes() {
@@ -29,12 +31,22 @@ function AppRoutes() {
       <AuthProvider>
         <Routes>
           <Route exact path="/" element={<LoginPage />} />
+          <Route exact path="/register" element={<RegisterPage />} />
           <Route
             exact
             path="/calendar"
             element={
               <Private>
                 <MainPage />
+              </Private>
+            }
+          />
+          <Route
+            exact
+            path="/search"
+            element={
+              <Private>
+                <SearchPage />
               </Private>
             }
           />

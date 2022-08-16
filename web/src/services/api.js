@@ -23,25 +23,13 @@ export const createTask = async ( newTask, userId ) => {
   return api
     .post(url, newTask)
     .then((response) => {
-      console.log(response);
+      // console.log(response);
+      return response;
     })
     .catch((error) => {
       console.log(error);
     });
 };
-
-export const showTask = async ( userId, id ) => {
-  const url = `/tasks/${userId}/${id}`;
-
-  return api
-    .show(url)
-    .then((response) => {
-      console.log(response);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-}
 
 export const updateTask = async ( userId, id, updatedTask) => {
   const url = `/tasks/${userId}/${id}`;
@@ -50,6 +38,7 @@ export const updateTask = async ( userId, id, updatedTask) => {
     .put(url, updatedTask)
     .then((response) => {
       console.log(response);
+      // return response;
     })
     .catch((error) => {
       console.log(error);

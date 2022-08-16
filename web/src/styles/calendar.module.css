@@ -151,6 +151,9 @@
 .eventTitleInput:nth-child(4) {
   margin-top: 10PX;
 }
+.eventUpdateInput {
+  margin-bottom: 15px
+}
 
 .error {
   border: 2px solid red;

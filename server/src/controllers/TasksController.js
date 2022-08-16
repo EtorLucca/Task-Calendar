@@ -59,22 +59,6 @@ class TasksController {
     }
   }
 
-  async show(req, res) {
-    try {
-      const { id } = req.params;
-      const task = await Task.findById(id);
-
-      if (!task) {
-        return res.status(404).json();
-      }
-
-      return res.json(task);
-    } catch (err) {
-      console.error(err);
-      return res.status(500).json({ error: "Internal server error." });
-    }
-  }
-
   async update(req, res) {
     try {
       const { id } = req.params;
@@ -83,7 +67,8 @@ class TasksController {
         description,
         hour,
         when,
-        duration
+        duration,
+        userId,
       } = req.body;
 
       const task = await Task.findById(id);
@@ -98,7 +83,7 @@ class TasksController {
         hour,
         when,
         duration,
-        userId: user_id,
+        userId: userId,
       });
 
       return res.status(200).json();

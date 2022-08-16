@@ -10,9 +10,10 @@ export function useDate(events, nav) {
     const dt = new Date();
     
     let dayEvents = [];
+    let event = [];
     
     function eventsForDate(date) {
-      dayEvents = events.filter(e => e.date === date)
+      dayEvents = events.filter(e => e.when === date)
 
       return dayEvents
     }
@@ -42,7 +43,7 @@ export function useDate(events, nav) {
     for(let i = 1; i <= (paddingDays + daysInMonth); i++) {
       
       let dayString = `${month + 1}/${i - paddingDays}/${year}`;
-      
+
       if (i > paddingDays) {
         daysArr.push({
           value: i - paddingDays,

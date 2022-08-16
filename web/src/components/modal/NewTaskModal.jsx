@@ -5,17 +5,22 @@ import styles from "../../styles/calendar.module.css";
 import { TimePicker } from "@mui/x-date-pickers";
 import { useEffect } from "react";
 
-export default function NewTaskModal({ onSave, openNew, setOpenNew, day}) {
+export default function NewTaskModal({ onSave, openNew, setOpenNew, when}) {
   const { user } = useContext(AuthContext);
   const [hour, setHour] = useState(new Date());
-  const [when, setWhen] = useState(day);
   const [values, setValues] = useState({
     title: "",
     description: "",
+    when: "",
     duration: ""
   });
+
   const [error, setError] = useState(false);
 
+  useEffect(() => {
+      setValues({ when })
+  }, [when])
+  
   const style = {
     position: 'absolute',
     top: '50%',
@@ -91,8 +96,7 @@ export default function NewTaskModal({ onSave, openNew, setOpenNew, day}) {
             onClick={() => {
               if (values.title) {
                 setError(false);
-                onSave({...values, hour, when}, user.id);
-                console.log({...values, hour, when})
+                onSave({...values, hour}, user.id);
                 handleClose();
               } else {
                 setError(true);
